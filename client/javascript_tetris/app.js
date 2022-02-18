@@ -1,6 +1,4 @@
-document.addEventListener('DOMCONTENTLOADED', () =>{
+document.addEventListener('DOMContentLoaded', () =>{
 
-
-//code goes here
 
 })
