@@ -1,3 +1,5 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable space-unary-ops */
 /* eslint-disable max-len */
 /* eslint-disable indent */
 /* eslint-disable semi */
@@ -124,13 +126,24 @@ document.addEventListener('DOMContentLoaded', () => {
       draw()
   }
 
+function rotate(){
+  undraw()
+  currentRotation ++
+  if (currentRotation === current.length){
+    currentRotation = 0
+  }
+  else current = theTetrominoes[random][currentRotation]
+  
+  draw()
+
+}
 
   function control(e){
     if (e.keyCode === 37){
       moveLeft()
     }
     else if (e.keyCode === 38){
-     // Rotate
+     rotate()
     }
     else if (e.keyCode === 39){
       moveRight()
