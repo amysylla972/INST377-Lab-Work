@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable indent */
 /* eslint-disable semi */
 /* eslint-disable comma-spacing */
@@ -98,6 +99,50 @@ document.addEventListener('DOMContentLoaded', () => {
     draw()
     freeze()
     }
+
+  function moveLeft(){
+    undraw()
+    const isAtLeftEdge = current.some(index => (currentPosition + index) % GRID_WIDTH === 0)
+
+    if (!isAtLeftEdge) {
+      currentPosition -=1 }
+    if (current.some(index => squares[currentPosition + index].classList.contains('taken'))){
+      currentPosition +=1 }
+
+      draw()
+  }
+
+  function moveRight(){
+    undraw()
+    const isAtRightEdge = current.some(index => (currentPosition + index) % GRID_WIDTH === GRID_WIDTH -1 )
+
+    if (!isAtRightEdge) {
+      currentPosition +=1 }
+    if (current.some(index => squares[currentPosition + index].classList.contains('taken'))){
+      currentPosition -=1 }
+
+      draw()
+  }
+
+
+  function control(e){
+    if (e.keyCode === 37){
+      moveLeft()
+    }
+    else if (e.keyCode === 38){
+     // Rotate
+    }
+    else if (e.keyCode === 39){
+      moveRight()
+    }
+    else if (e.keycode === 40){
+      moveDown()
+    }
+
+    }
+  
+  document.addEventListener('keyup', control)
+
     // Set falling speed
     timerId = setInterval(moveDown, 1000)
 
