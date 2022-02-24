@@ -1,19 +1,79 @@
-YOUR NAME Lab 4: HTML Forms
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Amy Sylla Lab 4: Flexbox and carousel</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <div class="title">
+    <h1>
+     Amy Sylla Lab 4 
+    </h1>    
+    </div>  
+  <body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <div class='date'>February 18th</div>
+        <div class='links'>
+            <div class='signup'><a href="data.html">Database Demos</a></div>
+            <div class='login'><a href="https://dashboard.heroku.com/apps/shrouded-sierra-34835">Main Page</a></div>
+        </div>
+      </div>
+    </div>
+    <div class='header-container'>
+        <div class='socials'>
+            <div class='subscribe'><a href="">Group Project Link </a></div>
+        </div>
+        <div class='header'>
+            <div class='logo'><img src='images/awesome-logo.svg'/></div>
+          <div class='socials'>
+            <div class='social'><a href="https://github.com/amysylla972?tab=repositories">My Github</a></div>
+          </div>
+        </div>
+      </div>
 
-today's date
-Database Demos
-Main Page
+      <div class = 'carousel'>
 
-Group Project Link (no site yet)
-Awesome Logo
-Github Link
+        <div class = 'carousel_item carousel_item--visible'>
+          <img src = 'images/one.svg'/>
+        </div>
+        <div class = 'carousel_item'>
+          <img src='images/two.svg'/>
+        </div>
+        <div class = 'carousel_item'>
+          <img src='images/three.svg'/>
+        </div>
+        <div class = 'carousel_item'>
+          <img src='images/four.svg'/>
+        </div>
+        <div class = 'carousel_item'>
+          <img src='images/five.svg'/>
+        </div>
 
-image_1
-image_2
-image_3
-image_4
-image_5
+        <div class = 'carousel_actions'>
+          <button id= 'carousel_button--prev'>prev</button>
+          <button id= 'carousel_button--next'>next</button>
+        </div>
+      </div>
 
-footer item 1
-footer item 2
-footer item 3
+      <script src= 'script.js'></script>
+
+      <div class='footer'>
+        <div class='footer-item footer-one'>
+            <h5>
+                footer item 1
+            </h5>
+        </div>
+        <div class='footer-item footer-two'>
+            <h5>
+                footer item 2
+            </h5>
+        </div>
+        <div class='footer-item footer-three'>
+            <h5>
+                footer item 3
+            </h5>
+        </div>
+      </div>
+  </body>
+</html>

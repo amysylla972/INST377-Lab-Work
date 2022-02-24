@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable no-plusplus */
 /* eslint-disable space-unary-ops */
 /* eslint-disable max-len */
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const ScoreDisplay = document.querySelector('#score');
   const StartButton = document.querySelector('#start-button');
   const GRID_WIDTH = 10;
+  let nextRandom = 0;
 
   // The Tetrominoes
   const lTetromino = [
@@ -80,16 +82,41 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+
+const displaysquares = document.querySelectorAll('.mini-grid div');
+const displayWidth = 4;
+let displayIndex = 0; 
+ 
+
+const upNextTetrominoes = [
+  [1, displayWidth + 1, displayWidth * 2 + 1, 2], // l tetro
+  [0, displayWidth, displayWidth + 1, displayWidth * 2 + 1], // z tetro
+  [1, displayWidth, displayWidth + 1, displayWidth + 2], // t tetro
+  [0, 1, displayWidth, displayWidth + 1], // o tetro
+  [1, displayWidth + 1, displayWidth * 2 + 1, displayWidth * 3 + 1] // i tetro
+]
+
+function displayShape(){
+  displaysquares.forEach(square => {
+    square.classList.remove('tetromino')
+  })
+  upNextTetrominoes[nextRandom].forEach(index => {
+    displaysquares[displayIndex + index].classList.add('tetromino')
+  })
+}
+
+
   // Stop the tetromino at the end of the grid and draw a new one
    function freeze(){
      if (current.some(index => squares[currentPosition + index + GRID_WIDTH].classList.contains('taken'))){
        current.forEach(index => squares[currentPosition + index].classList.add('taken'))
        // start new tetromino
-      
-     random = Math.floor(Math.random()*theTetrominoes.length);
+     random = nextRandom 
+     nextRandom = Math.floor(Math.random()*theTetrominoes.length);
      current = theTetrominoes[random][currentRotation];
      currentPosition = 4;
      draw()
+     displayShape()
      }
    }
 
@@ -158,6 +185,23 @@ function rotate(){
 
     // Set falling speed
     timerId = setInterval(moveDown, 1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  });
 
