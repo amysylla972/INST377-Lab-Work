@@ -11,6 +11,48 @@ body {
   background-color: rgb(197, 58, 88);
 }
 
+.lab_5{
+  background-color: #f27da0;
+  width: 50%;
+  border-radius: 5px;
+  
+}
+
+.lab_5 h1{
+  color: #F6F7F8;
+}
+
+
+.final{
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
+ align-items: center;
+
+ gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
+ 
+}
+
+.bigform{
+
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 20%;
+  padding: 50px;
+ border-radius: 5px;
+
+}
+
+.sub-text{
+  background-color: #65d09e;
+  width: 60%;
+  border-radius: 2px;
+}
+
 /* Page Layout */
 .columns {
   display: flex;
@@ -52,6 +94,7 @@ body {
   width: 100%;
   padding: 7px;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .form-row label {

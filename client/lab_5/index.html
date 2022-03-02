@@ -6,40 +6,45 @@
     <link rel='stylesheet' href='styles.css'/>
   </head>
   <body>
-    <h1>Amy Sylla Lab 5</h1>
-
-    <div class='form-row'>
-        <label for='name'>First Name</label>
-        <input id='name' name='name' type='text'/>
+    <div class="lab_5"><h1>Amy Sylla Lab 5</h1></div>
+<div class="final">
+  
+      <div class="bigform">
+        <form action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json" method="get" class="form-row">
+          <div class='form-row'>
+              <label for='first-name'>First Name</label>
+              <input id='first-name' name='first-name' type='text'/>
+            </div>
+            <div class='form-row'>
+              <label for='name'>Food Preference</label>
+              <input id='name' name='name' type='text'/>
+            </div>
+          <fieldset class='legacy-form-row'>
+              <legend>Veggie or Vegan?</legend>
+              <input id='talk-type-1'
+                     name='talk-type'
+                     type='radio'
+                     value='main-stage' />
+              <label for='talk-type-1' class='radio-label'>Yes</label>
+              <input id='talk-type-2'
+                     name='talk-type'
+                     type='radio'
+                     value='workshop'
+                     checked />
+              <label for='talk-type-2' class='radio-label'>No</label>
+            </fieldset>
+  
+  
+            <div class='form-row'>
+              <button>Submit</button>
+            </div>
+        </form>
       </div>
-
-      <div class='form-row'>
-        <label for='name'>Food Preference</label>
-        <input id='name' name='name' type='text'/>
-      </div>
-
-    <fieldset class='legacy-form-row'>
-        <legend>Veggie or Vegan?</legend>
-        <input id='talk-type-1'
-               name='talk-type'
-               type='radio'
-               value='main-stage' />
-        <label for='talk-type-1' class='radio-label'>Yes</label>
-        <input id='talk-type-2'
-               name='talk-type'
-               type='radio'
-               value='workshop'
-               checked />
-        <label for='talk-type-2' class='radio-label'>No</label>
-      </fieldset>
-
-      <h2>
-          This is going to be something in two weeks. 
-      </h2>
-
-      
-      <div class='form-row'>
-        <button>Submit</button>
-      </div>
+  
+     <div class="sub-text">
+       <p>This is going to be something in 2 weeks</p>
+     </div>
+</div>
 
   </body>
+</html>
