@@ -29,7 +29,7 @@ body {
  flex-direction: row;
  align-items: center;
 
- gap: 10px;
+  gap: 10px;
   gap: 10px 20px; /* row-gap column gap */
   row-gap: 10px;
   column-gap: 20px;
@@ -43,12 +43,13 @@ body {
   border-radius: 3px;
   width: 20%;
   padding: 50px;
- border-radius: 5px;
+  border-radius: 5px;
+  margin: 10px ;
 
 }
 
 .sub-text{
-  background-color: #65d09e;
+  background-color: #e1428c;
   width: 60%;
   border-radius: 2px;
 }
