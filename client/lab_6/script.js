@@ -1,3 +1,5 @@
+/* eslint-disable space-infix-ops */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-multi-assign */
 function getRandomIntInclusive(min, max) {
