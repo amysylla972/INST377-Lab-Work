@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(197, 58, 88);
+  }
+  
+  .lab_5{
+    background-color: #f27da0;
+    width: 50%;
+    border-radius: 5px;
+    
+  }
+  
+  .lab_5 h1{
+    color: #F6F7F8;
+  }
+  
+  
+  .final{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   align-items: center;
+  
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+   
+  }
+  
+  .bigform{
+  
+    background-color: #F6F7F8;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 20%;
+    padding: 50px;
+    border-radius: 5px;
+    margin: 10px ;
+  
+  }
+  
+  .sub-text{
+    background-color: #e1428c;
+    width: 60%;
+    border-radius: 2px;
+  }
+  
+  /* Page Layout */
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .wrapper {
+    display: flex;
+  }
+  .container {
+    max-width: 960px;
+    margin-top: 25px;
+  }
+  
+  .form-row input[type='text'] {
+    background-color: #FFFFFF;
+    /* ... */
+  }
+  
+  /* To have another selector */
+  .form-row input[type='text'],
+  .form-row input[type='email'] {
+    background-color: #FFFFFF;
+    /* ... */
+  }
+  
+  .form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type='text'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .form-row label {
+    margin-bottom: 15px;
+  }
+  
+  .legacy-form-row {
+    border: none;
+    margin-bottom: 40px;
+  }
+  
+  .legacy-form-row legend {
+    margin-bottom: 15px;
+  }
+  
+  .legacy-form-row .radio-label {
+    display: block;
+    font-size: 14px;
+    padding: 0 20px 0 10px;
+  }
+  
+  .legacy-form-row input[type='radio'] {
+    margin-top: 2px;
+  }
+    
+  .legacy-form-row .radio-label,
+  .legacy-form-row input[type='radio'] {
+    float: left;
+  }
+  
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #da6379;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  .form-row button:hover {
+    background-color: #f27da0;
+  }
+  
+  .form-row button:active {
+    background-color: #e2627e;
+  }
